@@ -11,8 +11,12 @@
             "id": "e6b80f1383946e82",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Hello world.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Hello world.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Hello world.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,11 +124,29 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "Hello world.md"
+              }
+            }
+          },
+          {
+            "id": "9d3c63e7d0203011",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "998dcbe155a87ae2",
+            "type": "leaf",
+            "state": {
+              "type": "hackernews-view",
               "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -131,6 +155,8 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "81c28797e138382d",
-  "lastOpenFiles": []
+  "active": "c350a6a74a29e34a",
+  "lastOpenFiles": [
+    "Hello world.md"
+  ]
 }
