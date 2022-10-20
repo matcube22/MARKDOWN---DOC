@@ -69,8 +69,50 @@ Prenez rapidement connaissance du document suivant, nous exploiterons certaines 
 
 [Suivez la procédure pour installer un serveur central depuis une VM] (<https://docs.centreon.com/fr/docs/installation/installation-of-a-central-server/using-virtual-machines/>)
 
+**On télécharge depuis imageStore la VM**
+```bash
+scp etudiant@172.16.16.1:/REPERTOIRE/DU/FICHIER /DATA/OVF/CENTREON
+
+#Remarque: nous le téléchargeons directement sur notre partage NFS
+```
+
+**On importe le fichier OVA depuis VSphere**
+```
+Selectionner un hôte du cluster -> Clique droit: déployer un modèle OVF -> On indique le répertoire de l'OVF
+```
+
 * Mettez une IP statique sur l'interface de votre réseau privé et testez l'accès depuis une VM graphique de votre réseau privé (cf TP1, VM disponible sur 172.16.16.1)
 * Mettez une interface NAT (pour permettre les éventuelles mises à jour via le réseau...)
+
+**/!\ Il faut ajouter une carte réseau depuis Vsphere**
+
+**Pour configurer le clavier**
+```bash
+loadkeys fr
+#Remarque: Effet temporaire
+
+localectl set-keymap fr
+#Remarque: Effet permanent
+```
+
+**Configuration du reseau sur le switch : Vswitch0**
+```bash
+ip addr add 172.16.10.40/16 dev ens32
+#Remarque: L'interface peut se clear et on perd la configuration réseau
+```
+**Configuration du timezone**
+```bash
+timedatectl set-timezone Europe/Paris
+```
+**On configure l'hostname**
+```
+hostnamectl set-hostname votre-hostname
+```
+**Creation de la base de donnée MariaDB**
+```bash
+su - centreon
+/bin/php /usr/share/centreon/cron/centreon-partitioning.php
+```
 
 [En cas de soucis avec le clavier](https://www.it-connect.fr/passer-le-clavier-en-azerty-sur-centos-7-rhel-7/)
 
