@@ -85,6 +85,9 @@ Selectionner un hôte du cluster -> Clique droit: déployer un modèle OVF -> On
 * Mettez une interface NAT (pour permettre les éventuelles mises à jour via le réseau...)
 
 **/!\ Il faut ajouter une carte réseau depuis Vsphere**
+```
+Type de la carte: VMXENT3
+```
 
 **Pour configurer le clavier**
 ```bash
@@ -98,6 +101,7 @@ localectl set-keymap fr
 **Configuration du reseau sur le switch : Vswitch0**
 ```bash
 ip addr add 172.16.10.40/16 dev ens32
+ip route add default via 172.16.0.1
 #Remarque: L'interface peut se clear et on perd la configuration réseau
 ```
 **Configuration du timezone**
@@ -112,6 +116,10 @@ hostnamectl set-hostname votre-hostname
 ```bash
 su - centreon
 /bin/php /usr/share/centreon/cron/centreon-partitioning.php
+```
+**Application des paramètres**
+```bash
+systemctl restart cbd centengine gorgoned
 ```
 
 [En cas de soucis avec le clavier](https://www.it-connect.fr/passer-le-clavier-en-azerty-sur-centos-7-rhel-7/)
@@ -132,8 +140,9 @@ su - centreon
 
 * Installez un agent SNMP sur Debian (sur la VM graphique précédente ou une autre). Vous étudierez plus en détail le protocole SNMP au cours de l'année.
 
-```
+```bash
 apt install snmpd
+#Remarque: la VM peut 'freeze'
 ```
 
 * Sauvegardez le fichier de configuration de départ.
