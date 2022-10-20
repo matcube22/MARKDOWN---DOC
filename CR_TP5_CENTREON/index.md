@@ -159,12 +159,18 @@ Editez le pour y ajouter ces lignes :
 ```
 rocommunity macommunaute @IP_SERVEUR_CENTREON # renseigne la communauté et l’ip du serveur centreon
 ```
-
+**Pour notre configuration**
+```bash
+rocommunity tkt 172.16.10.100
+```
 Vérifiez depuis le serveur Centreon que le client SNMP est accessible
 
+```bash
+snmpwalk -v 2c -c tkt 172.16.10.100
+#Remarque: On execute depuis Centreon
 ```
-snmpwalk -v 2c -c macommunaute #ip_machine#
-```
+**Sortie de commande: Extrait**
+![commande outpu](./images/img1.png)
 
 [En cas de problème, attention au pare feu Debian](https://www.it-connect.fr/configurer-un-pare-feu-local-sous-debian-11-avec-ufw/)
 
