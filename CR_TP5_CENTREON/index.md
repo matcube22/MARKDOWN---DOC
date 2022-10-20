@@ -122,6 +122,9 @@ su - centreon
 systemctl restart cbd centengine gorgoned
 ```
 
+**Connexion à l'interface web d'administration**
+![centreon web](./images/img0.png)
+
 [En cas de soucis avec le clavier](https://www.it-connect.fr/passer-le-clavier-en-azerty-sur-centos-7-rhel-7/)
 
 # 6. Superviser un serveur Linux

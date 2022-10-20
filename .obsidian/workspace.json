@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -155,7 +155,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "c45c1e098b873597",
+  "active": "9d3c63e7d0203011",
   "lastOpenFiles": [
     "CR_TP5_CENTREON/index.md",
     "Hello world.md"
