@@ -172,6 +172,8 @@ snmpwalk -v 2c -c tkt 172.16.10.100
 **Sortie de commande: Extrait**
 ![commande outpu](./images/img1.png)
 
+**Probleme de package manager: a finir en autonomie**
+
 [En cas de problème, attention au pare feu Debian](https://www.it-connect.fr/configurer-un-pare-feu-local-sous-debian-11-avec-ufw/)
 
 ## 6.4 Déployer la configuration
