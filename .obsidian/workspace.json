@@ -4,22 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "da948d4b5f4dac5d",
+        "id": "0360cbde5211fd0e",
         "type": "tabs",
         "children": [
           {
-            "id": "905192b7385bc520",
+            "id": "181b52bbf29ef6c9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paperasse LVEL/Inscription Régate des IUT 2023.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "c51b10c2c8059e4b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paperasse LVEL/Inscription Régate des IUT 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Paperasse LVEL/Inscription Régate des IUT 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Paperasse LVEL/Inscription Régate des IUT 2023.md"
-              }
+              "state": {}
             }
           },
           {
@@ -155,15 +156,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "905192b7385bc520",
+  "active": "c51b10c2c8059e4b",
   "lastOpenFiles": [
-    "Paperasse LVEL/signature.md",
+    "SAE3/Compte rendu projet.md",
+    "SAE3/To do SAE.md",
+    "SAE3/schema_depannage.svg",
     "Paperasse LVEL/Inscription Régate des IUT 2023.md",
+    "Paperasse LVEL/signature.md",
     "markdown-cheat-sheet.md",
     "MATHS_GRAPH_TP1/Compte rendu TP - Graphs.md",
     "MATHS_GRAPH_TP1/Regate des IUT 2022-2023 - Devis.md",
     "Hello world.md",
-    "CR_SAE_VIRTUALISATION/Compte rendu projet - SAE Virtualisation.md",
-    "CR_TP5_CENTREON/index.md"
+    "CR_SAE_VIRTUALISATION/Compte rendu projet - SAE Virtualisation.md"
   ]
 }
