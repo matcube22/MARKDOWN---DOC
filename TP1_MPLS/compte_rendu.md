@@ -166,55 +166,6 @@ vlan internal allocation policy ascending
 
 interface FastEthernet0/1
 
-interface FastEthernet0/2
-
-interface FastEthernet0/3
-
-interface FastEthernet0/4
-
-interface FastEthernet0/5
-
-interface FastEthernet0/6
-
-interface FastEthernet0/7
- 
-interface FastEthernet0/8
-
-interface FastEthernet0/9
-
-interface FastEthernet0/10
-
-interface FastEthernet0/11
-
-interface FastEthernet0/12
-
-interface FastEthernet0/13
-
-interface FastEthernet0/14
-
-interface FastEthernet0/15
-
-interface FastEthernet0/16
-
-interface FastEthernet0/17
-
-interface FastEthernet0/18
-
-interface FastEthernet0/19
- 
-interface FastEthernet0/20
-
-interface FastEthernet0/21
-
-interface FastEthernet0/22
-
-interface FastEthernet0/23
-
-interface FastEthernet0/24
-
-interface GigabitEthernet0/1
-
-interface GigabitEthernet0/2
 
 interface Vlan1
  no ip address
@@ -342,4 +293,232 @@ O        100.0.27.0/24
            [110/3] via 100.0.28.254, 00:02:24, GigabitEthernet0/0/0
 C        100.0.28.0/24 is directly connected, GigabitEthernet0/0/0
 L        100.0.28.28/32 is directly connected, GigabitEthernet0/0/0
+```
+
+Wireshark
+
+```
+Label Distribution Protocol
+    Version: 1
+    PDU Length: 662
+    LSR ID: 10.10.10.28
+    Label Space ID: 0
+    Address Message
+        0... .... = U bit: Unknown bit not set
+        Message Type: Address Message (0x300)
+        Message Length: 22
+        Message ID: 0x00000077
+        Address List
+            00.. .... = TLV Unknown bits: Known TLV, do not Forward (0x0)
+            TLV Type: Address List (0x101)
+            TLV Length: 14
+            Address Family: IPv4 (1)
+            Addresses
+                Address 1: 100.0.28.28
+                Address 2: 10.28.28.254
+                Address 3: 10.10.10.28
+    Label Mapping Message
+```
+## Table de routage du LSR4
+```bash
+LSR4#sh ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     100.0.0.0/24 is subnetted, 5 subnets
+C       100.0.28.0 is directly connected, FastEthernet0/0
+O       100.0.24.0 [110/11] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+O       100.0.25.0 [110/11] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+O       100.0.26.0 [110/2] via 10.0.34.3, 00:16:10, FastEthernet0/0/0
+O       100.0.27.0 [110/2] via 10.0.34.3, 00:16:10, FastEthernet0/0/0
+     10.0.0.0/8 is variably subnetted, 18 subnets, 2 masks
+O       10.0.12.0/24 [110/2] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+O       10.10.10.2/32 [110/3] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+                      [110/3] via 10.0.34.3, 00:16:10, FastEthernet0/0/0
+O       10.10.10.3/32 [110/2] via 10.0.34.3, 00:16:10, FastEthernet0/0/0
+O       10.28.28.0/24 [110/2] via 100.0.28.28, 00:13:38, FastEthernet0/0
+O E2    10.27.27.0/24 [110/20] via 10.0.34.3, 00:16:10, FastEthernet0/0/0
+O E2    10.26.26.0/24 [110/20] via 10.0.34.3, 00:16:10, FastEthernet0/0/0
+O E2    10.25.25.0/24 [110/20] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+O E2    10.24.24.0/24 [110/20] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+O       10.10.10.1/32 [110/2] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+C       10.10.10.4/32 is directly connected, Loopback4
+O E2    10.10.10.26/32 [110/20] via 10.0.34.3, 00:16:10, FastEthernet0/0/0
+O E2    10.10.10.27/32 [110/20] via 10.0.34.3, 00:13:48, FastEthernet0/0/0
+O E2    10.10.10.24/32 [110/20] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+O E2    10.10.10.25/32 [110/20] via 10.0.41.1, 00:16:10, FastEthernet0/1/0
+O E2    10.10.10.28/32 [110/20] via 100.0.28.28, 00:13:38, FastEthernet0/0
+O       10.0.23.0/24 [110/2] via 10.0.34.3, 00:16:10, FastEthernet0/0/0
+C       10.0.41.0/24 is directly connected, FastEthernet0/1/0
+C       10.0.34.0/24 is directly connected, FastEthernet0/0/0
+
+```
+
+## MPLS forwarding-table du routeur 28
+```bash
+Router-28(config-if)#do sh mpls for
+Local      Outgoing   Prefix           Bytes Label   Outgoing   Next Hop    
+Label      Label      or Tunnel Id     Switched      interface              
+16         18         10.0.12.0/24     0             Gi0/0/0    100.0.28.254
+17         19         10.0.23.0/24     0             Gi0/0/0    100.0.28.254
+18         Pop Label  10.0.34.0/24     0             Gi0/0/0    100.0.28.254
+19         Pop Label  10.0.41.0/24     0             Gi0/0/0    100.0.28.254
+20         17         10.10.10.1/32    0             Gi0/0/0    100.0.28.254
+21         16         10.10.10.2/32    0             Gi0/0/0    100.0.28.254
+22         20         10.10.10.3/32    0             Gi0/0/0    100.0.28.254
+23         Pop Label  10.10.10.4/32    0             Gi0/0/0    100.0.28.254
+24         33         10.10.10.24/32   0             Gi0/0/0    100.0.28.254
+25         28         10.10.10.25/32   0             Gi0/0/0    100.0.28.254
+26         25         10.10.10.26/32   0             Gi0/0/0    100.0.28.254
+27         35         10.10.10.27/32   0             Gi0/0/0    100.0.28.254
+28         34         10.24.24.0/24    0             Gi0/0/0    100.0.28.254
+29         29         10.25.25.0/24    0             Gi0/0/0    100.0.28.254
+30         26         10.26.26.0/24    0             Gi0/0/0    100.0.28.254
+31         22         10.27.27.0/24    0             Gi0/0/0    100.0.28.254
+32         32         100.0.24.0/24    0             Gi0/0/0    100.0.28.254
+33         27         100.0.25.0/24    0             Gi0/0/0    100.0.28.254
+34         24         100.0.26.0/24    0             Gi0/0/0    100.0.28.254
+35         21         100.0.27.0/24    0             Gi0/0/0    100.0.28.254
+```
+
+
+## MPLS forwarding-table du LSR4
+```bash
+LSR4#sh mpls for
+Local  Outgoing      Prefix            Bytes Label   Outgoing   Next Hop    
+Label  Label or VC   or Tunnel Id      Switched      interface              
+16     17            10.10.10.2/32     0             Fa0/0/0    10.0.34.3   
+       16            10.10.10.2/32     0             Fa0/1/0    10.0.41.1   
+17     Pop Label     10.10.10.1/32     0             Fa0/1/0    10.0.41.1   
+18     Pop Label     10.0.12.0/24      0             Fa0/1/0    10.0.41.1   
+19     Pop Label     10.0.23.0/24      0             Fa0/0/0    10.0.34.3   
+20     Pop Label     10.10.10.3/32     0             Fa0/0/0    10.0.34.3   
+21     Pop Label     100.0.27.0/24     2058          Fa0/0/0    10.0.34.3   
+22     22            10.27.27.0/24     918           Fa0/0/0    10.0.34.3   
+24     Pop Label     100.0.26.0/24     5785          Fa0/0/0    10.0.34.3   
+25     21            10.10.10.26/32    0             Fa0/0/0    10.0.34.3   
+26     24            10.26.26.0/24     3980          Fa0/0/0    10.0.34.3   
+27     Pop Label     100.0.25.0/24     0             Fa0/1/0    10.0.41.1   
+28     28            10.10.10.25/32    0             Fa0/1/0    10.0.41.1   
+29     29            10.25.25.0/24     0             Fa0/1/0    10.0.41.1   
+30     Pop Label     10.28.28.0/24     784           Fa0/0      100.0.28.28 
+31     Pop Label     10.10.10.28/32    882           Fa0/0      100.0.28.28 
+32     Pop Label     100.0.24.0/24     0             Fa0/1/0    10.0.41.1   
+33     32            10.10.10.24/32    0             Fa0/1/0    10.0.41.1   
+34     33            10.24.24.0/24     11373         Fa0/1/0    10.0.41.1   
+35     34            10.10.10.27/32    918           Fa0/0/0    10.0.34.3
+```
+
+## CEF du routeur 28
+```bash
+Router-28(config-if)#do sh ip cef 10.0.12.0 det
+10.0.12.0/24, epoch 1
+  local label info: global/16
+  nexthop 100.0.28.254 GigabitEthernet0/0/0 label 18
+
+Router-28(config-if)#do sh ip cef 10.0.34.0 det
+10.0.34.0/24, epoch 1
+  local label info: global/18
+  nexthop 100.0.28.254 GigabitEthernet0/0/0
+```
+
+
+## CEF du LSR4
+
+```bash
+LSR4#sh ip cef 10.0.12.0 det
+10.0.12.0/24, epoch 0
+  local label info: global/18
+  nexthop 10.0.41.1 FastEthernet0/1/0
+
+LSR4#sh ip cef 10.0.34.0 det
+10.0.34.0/32, epoch 0, flags receive
+  Dependent covered prefix type cover need deagg cover 10.0.34.0/24
+  Interface source: FastEthernet0/0/0
+  receive for FastEthernet0/0/0
+```
+Notre label local global est 18, et notre interface sortie Fe0/1/0 avec le next-hop 10.0.41.1
+
+
+## MPLS LDP detail du routeur 28
+```bash
+Router-28(config-if)#do sh mpls ldp bindings 10.0.12.0 24 detail
+  lib entry: 10.0.12.0/24, rev 2, chkpt: none
+        local binding:  label: 16 (owner LDP)
+          Advertised to:
+          10.10.10.4:0           
+        remote binding: lsr: 10.10.10.4:0, label: 18 checkpointed
+```
+
+On possède le label 16, et notre prochain label est **18** @IP10.10.10.4 pour le saut.
+
+# Ping poste 27
+On observe au dessus de la couche 2 du modèle, MPLS, on lit:
+```
+MultiProtocol Label Switching Header, Label: 21, Exp: 0, S: 1, TTL: 63
+    0000 0000 0000 0001 0101 .... .... .... = MPLS Label: 21 (0x00015)
+    .... .... .... .... .... 000. .... .... = MPLS Experimental Bits: 0
+    .... .... .... .... .... ...1 .... .... = MPLS Bottom Of Label Stack: 1
+    .... .... .... .... .... .... 0011 1111 = MPLS TTL: 63
+
+```
+
+L'avant dernier retire le lale
+```
+Frame 42: 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface \Device\NPF_{0146BE60-F92F-48FB-84BD-320E6FABE536}, id 0
+Ethernet II, Src: Cisco_f2:65:70 (00:13:60:f2:65:70), Dst: Cisco_af:dd:00 (00:b1:e3:af:dd:00)
+    Destination: Cisco_af:dd:00 (00:b1:e3:af:dd:00)
+    Source: Cisco_f2:65:70 (00:13:60:f2:65:70)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 100.0.27.27, Dst: 10.28.28.28
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x7d27 (32039)
+    Flags: 0x40, Don't fragment
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 253
+    Protocol: ICMP (1)
+    Header Checksum: 0x5b2e [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 100.0.27.27
+    Destination Address: 10.28.28.28
+Internet Control Message Protocol
+
+```
+![[ping_mpls.png]]
+
+## MPLS forwarding-table du routeur 27
+```bash
+Routeur27>sh mpls forwarding-table 
+Local      Outgoing   Prefix           Bytes Label   Outgoing   Next Hop    
+Label      Label      or Tunnel Id     Switched      interface              
+16         20         10.0.12.0/24     0             Gi0/0/0    100.0.27.254
+17         Pop Label  10.0.23.0/24     0             Gi0/0/0    100.0.27.254
+18         Pop Label  10.0.34.0/24     0             Gi0/0/0    100.0.27.254
+19         19         10.0.41.0/24     0             Gi0/0/0    100.0.27.254
+20         18         10.10.10.1/32    0             Gi0/0/0    100.0.27.254
+21         17         10.10.10.2/32    0             Gi0/0/0    100.0.27.254
+22         Pop Label  10.10.10.3/32    0             Gi0/0/0    100.0.27.254
+23         16         10.10.10.4/32    0             Gi0/0/0    100.0.27.254
+24         32         10.10.10.24/32   0             Gi0/0/0    100.0.27.254
+25         27         10.10.10.25/32   0             Gi0/0/0    100.0.27.254
+26         21         10.10.10.26/32   0             Gi0/0/0    100.0.27.254
+27         30         10.10.10.28/32   0             Gi0/0/0    100.0.27.254
+28         33         10.24.24.0/24    0             Gi0/0/0    100.0.27.254
+29         28         10.25.25.0/24    0             Gi0/0/0    100.0.27.254
+30         24         10.26.26.0/24    0             Gi0/0/0    100.0.27.254
+31         29         10.28.28.0/24    0             Gi0/0/0    100.0.27.254
+32         31         100.0.24.0/24    0             Gi0/0/0    100.0.27.254
+33         25         100.0.25.0/24    0             Gi0/0/0    100.0.27.254
+34         Pop Label  100.0.26.0/24    0             Gi0/0/0    100.0.27.254
+35         26         100.0.28.0/24    0             Gi0/0/0    100.0.27.254
 ```

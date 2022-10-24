@@ -19,8 +19,12 @@
             "id": "c51b10c2c8059e4b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TP1_MPLS/compte_rendu.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TP1_MPLS/compte_rendu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TP1_MPLS/compte_rendu.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "TP1_MPLS/compte_rendu.md"
+              }
             }
           },
           {
