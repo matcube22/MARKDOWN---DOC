@@ -4,31 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0360cbde5211fd0e",
+        "id": "8cee821f851c7f3e",
         "type": "tabs",
         "children": [
           {
-            "id": "181b52bbf29ef6c9",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "c51b10c2c8059e4b",
+            "id": "11186c6f82510028",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TP1_MPLS/compte_rendu.md",
+                "file": "TP_DNS/Compte rendu TP - DNS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TP1_MPLS/compte_rendu.md",
+                "file": "TP_DNS/Compte rendu TP - DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TP1_MPLS/compte_rendu.md",
+                "file": "TP_DNS/Compte rendu TP - DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TP1_MPLS/compte_rendu.md"
+                "file": "TP_DNS/Compte rendu TP - DNS.md"
               }
             }
           },
@@ -164,17 +155,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "c51b10c2c8059e4b",
+  "active": "11186c6f82510028",
   "lastOpenFiles": [
+    "TP_DNS/dns4.jpeg",
+    "TP_DNS/Compte rendu TP - DNS.md",
+    "TP1_MPLS/compte_rendu.md",
     "SAE3/Compte rendu projet.md",
     "SAE3/To do SAE.md",
     "SAE3/schema_depannage.svg",
     "Paperasse LVEL/Inscription Régate des IUT 2023.md",
     "Paperasse LVEL/signature.md",
     "markdown-cheat-sheet.md",
-    "MATHS_GRAPH_TP1/Compte rendu TP - Graphs.md",
-    "MATHS_GRAPH_TP1/Regate des IUT 2022-2023 - Devis.md",
-    "Hello world.md",
-    "CR_SAE_VIRTUALISATION/Compte rendu projet - SAE Virtualisation.md"
+    "MATHS_GRAPH_TP1/Compte rendu TP - Graphs.md"
   ]
 }
