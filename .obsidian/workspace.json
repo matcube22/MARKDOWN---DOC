@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2A-1S-REZ/Avancement.md",
+                "file": "CR_SAE_VIRTUALISATION/SAE Virtualisation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2A-1S-REZ/Avancement.md",
+                "file": "CR_SAE_VIRTUALISATION/SAE Virtualisation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2A-1S-REZ/Avancement.md",
+                "file": "CR_SAE_VIRTUALISATION/SAE Virtualisation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2A-1S-REZ/Avancement.md"
+                "file": "CR_SAE_VIRTUALISATION/SAE Virtualisation.md"
               }
             }
           },
@@ -157,15 +157,15 @@
   },
   "active": "7bb31dbe80e64ef4",
   "lastOpenFiles": [
+    "CR_SAE_VIRTUALISATION/assets/schema_virtuel.png",
+    "CR_SAE_VIRTUALISATION/assets/schema_physique_virtualisation.png",
+    "CR_SAE_VIRTUALISATION/SAE Virtualisation.md",
+    "assets.md",
+    "2A-1S-REZ/Avancement.md",
     "2A-1S-REZ/Compte rendu projet.md",
     "2A-1S-REZ/README.md",
     "2A-1S-REZ/To do SAE.md",
-    "2A-1S-REZ/Avancement.md",
     "TP_DNS/Compte rendu TP - DNS.md",
-    "TP_DNS/dns4.jpeg",
-    "TP1_MPLS/compte_rendu.md",
-    "SAE3/Compte rendu projet.md",
-    "SAE3/To do SAE.md",
-    "SAE3/schema_depannage.svg"
+    "TP_DNS/dns4.jpeg"
   ]
 }
