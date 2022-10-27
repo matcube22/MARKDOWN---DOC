@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f2a3eb76a9ab4475",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.0.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,7 +152,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f2a3eb76a9ab4475",
+  "active": "7bb31dbe80e64ef4",
   "lastOpenFiles": [
     "CR_SAE_VIRTUALISATION/assets/schema_virtuel.png",
     "CR_SAE_VIRTUALISATION/assets/schema_physique_virtualisation.png",
