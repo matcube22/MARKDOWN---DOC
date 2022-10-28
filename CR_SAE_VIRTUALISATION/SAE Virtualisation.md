@@ -144,8 +144,32 @@ Quand l'installation est finie nous pouvons nous connecter avec **glpi** et mot 
 
 **Configuration d'une clé pour accéder au marketplace**
 
-
 #### Ajout de clients
+
+Nous devons installer l'agent-glpi
+```bash
+apt install glpi-agent
+```
+
+Puis modifier le fichier */etc/glpi-agent/agent.cfg* et ajouter le paramètre:
+```
+server: http://192.168.250.2/glpi/
+```
+
+On démarrer le service *agent*
+```
+# Uniquement pour cette session
+glpi-agent
+
+# De façon permanente
+systemctl enable glpi-agent
+```
+
+La commande nous retourne alors
+```
+[info] New Inventory from debian10...
+```
+
 ### Centreon
 #### Installation
 Tout d'abord nous devons créer une machine virtuel centos7. Nous détaillerons pas le détail de son [installation](https://docs.centos.org/en-US/centos/install-guide/)
