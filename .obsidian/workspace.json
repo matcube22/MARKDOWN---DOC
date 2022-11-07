@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f88de870c08efb6a",
+        "id": "c5e878aa7cbfda8c",
         "type": "tabs",
         "children": [
           {
-            "id": "847be760477332b6",
+            "id": "a8834ba856b25bb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AD_CR/Installation, Configuration AD.md",
+                "file": "TP_MAIL/Compte rendu mail.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AD_CR/Installation, Configuration AD.md",
+                "file": "TP_MAIL/Compte rendu mail.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AD_CR/Installation, Configuration AD.md",
+                "file": "TP_MAIL/Compte rendu mail.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AD_CR/Installation, Configuration AD.md"
+                "file": "TP_MAIL/Compte rendu mail.md"
               }
             }
           },
@@ -152,17 +152,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "847be760477332b6",
+  "active": "a8834ba856b25bb8",
   "lastOpenFiles": [
-    "hostname/img4.png.md",
+    "TP_DNS/Compte rendu TP - DNS.md",
+    "TP_MAIL/Compte rendu mail.md",
     "AD_CR/Installation, Configuration AD.md",
+    "hostname/img4.png.md",
     "CR_SAE_VIRTUALISATION/SAE Virtualisation.md",
     "CR_SAE_VIRTUALISATION/assets/schema_virtuel.png",
     "CR_SAE_VIRTUALISATION/assets/schema_physique_virtualisation.png",
     "assets.md",
     "2A-1S-REZ/Avancement.md",
-    "2A-1S-REZ/Compte rendu projet.md",
-    "2A-1S-REZ/README.md",
-    "2A-1S-REZ/To do SAE.md"
+    "2A-1S-REZ/Compte rendu projet.md"
   ]
 }
