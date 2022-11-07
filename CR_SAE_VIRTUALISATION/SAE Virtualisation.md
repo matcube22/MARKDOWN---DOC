@@ -1,4 +1,4 @@
-Présentation du projet
+Mise en place de la maquette du projet réseau de première année dans les hyperviseurs VMWare ESXI.
 # Présentation de l'infrastructure
 ## Plan câblage physique
 ![schema physique](assets/schema_physique_virtualisation.png)
@@ -6,14 +6,38 @@ Présentation du projet
 ![schema virtuel](assets/schema_virtuel.png)
 
 ## Groupe de ports
+Configuration du switch physique pour le taggage
+```
+Switch> enable
+Switch# configure terminal
+Switch(config)# interface gigabitethernet [Num ports]
+Switch(config-if)# switchport mode trunk
+
+```
 ## Routeur Cisco
+```
+Cisco> enable
+Cisco# configure terminal
+Cisco(config)# interface gigabitethernet [Num ports]
+Cisco(config-if)# ip address @IP @MASK
+
+# Configuration du routage
+Cisco(config-if)# ip route add 0.0.0.0 0.0.0.0 172.16.0.1
+Cisco(config)# ip routing
+
+# Configuration pour le DHCP
+Cisco(config-if)# ip helper-address 192.168.240.100
+
+# Configuration des règles NAT et PAT
+Cisco(config-if)# ip nat inside/outside # En fonction de l'interface si LAN ou WAN
+Cisco(config)# access-list 1 permit 10.10.11.0 0.0.0.255
+Cisco(config)# ip nat inside source liste 1 [interface sortie] overload
+```
 # Présentation des services
-## Clients
-### Linux
-### Windows 10
-## Services serveurs
 ### Active Directory
+[AJOUTER SCREENSHOT ADD]
 ### Web: Apache
+[AJOUTER SCREENSHOT APACHE FONCTIONNEL]
 ## Services de supervisions
 ### GLPI
 #### Installation
@@ -325,8 +349,18 @@ vim-cmd hostsvc/firmware/restore_config /<repertoire>/configBundle.tgz
 
 ## VMotion: Haute Disponibilité
 ### Configuration
-### Test de fonctionnement
-## VMotion: Répartition de charges
-### Configuration
-### Test de fonctionnement
-## Datastore
+- Dans la page d'accueil de vSphere Client, accédez à ``Accueil > Hôtes et clusters.``
+- Cliquez avec le bouton droit sur le centre de données et sélectionnez ``Nouveau cluster``.
+- Saisissez un nom pour le cluster.
+- Sélectionnez les fonctionnalités de cluster vSphere HA.
+### Ajout de clients dans le cluster
+- Dans vSphere Client, accédez à un cluster d'un centre de données.
+- Dans l'onglet Configurer, sélectionnez Configuration > Démarrage rapide.
+- Cliquez sur Ajouter dans la carte Ajouter des hôtes.
+- Sur la page Ajouter des hôtes, ajoutez des hôtes nouveaux ou existants au cluster.
+    -   Ajoutez des hôtes qui ne font pas partie de l'inventaire de vCenter Server.
+        1.  Cliquez sur l'onglet Nouveaux hôtes.
+        2.  Renseignez les zones de texte Adresse IP et d'informations d'identification pour ces hôtes.
+    -   Ajoutez des hôtes qui sont gérés par votre instance vCenter Server et qui sont dans le même centre de données que votre cluster.
+        1.  Cliquez sur l'onglet Hôtes existants.
+        2.  Dans la liste, sélectionnez les hôtes que vous souhaitez ajouter au cluster.
