@@ -11,8 +11,12 @@
             "id": "31998b92e6575f60",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "EXPO GEOPO/Notes.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "EXPO GEOPO/Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "EXPO GEOPO/Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "EXPO GEOPO/Notes.md"
+              }
             }
           },
           {
@@ -144,7 +152,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "31998b92e6575f60",
+  "active": "81c28797e138382d",
   "lastOpenFiles": [
     "TP_MAIL/Compte rendu mail.md",
     "SAE 3.01/Decouverte ADS.md",
