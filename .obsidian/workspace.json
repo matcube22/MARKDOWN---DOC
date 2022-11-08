@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "c5e878aa7cbfda8c",
+        "id": "a00b0c9840091f72",
         "type": "tabs",
         "children": [
           {
-            "id": "a8834ba856b25bb8",
+            "id": "31998b92e6575f60",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TP_MAIL/Compte rendu mail.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95a883df6943b095",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SAE 3.01/Decouverte ADS.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SAE 3.01/Decouverte ADS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SAE 3.01/Decouverte ADS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "SAE 3.01/Decouverte ADS.md"
-              }
+              "state": {}
             }
           },
           {
@@ -165,9 +144,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "95a883df6943b095",
+  "active": "31998b92e6575f60",
   "lastOpenFiles": [
     "TP_MAIL/Compte rendu mail.md",
+    "SAE 3.01/Decouverte ADS.md",
     "TP_DNS/Compte rendu TP - DNS.md",
     "AD_CR/Installation, Configuration AD.md",
     "hostname/img4.png.md",
@@ -175,7 +155,6 @@
     "CR_SAE_VIRTUALISATION/assets/schema_virtuel.png",
     "CR_SAE_VIRTUALISATION/assets/schema_physique_virtualisation.png",
     "assets.md",
-    "2A-1S-REZ/Avancement.md",
-    "2A-1S-REZ/Compte rendu projet.md"
+    "2A-1S-REZ/Avancement.md"
   ]
 }
