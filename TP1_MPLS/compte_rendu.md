@@ -522,3 +522,65 @@ Label      Label      or Tunnel Id     Switched      interface
 34         Pop Label  100.0.26.0/24    0             Gi0/0/0    100.0.27.254
 35         26         100.0.28.0/24    0             Gi0/0/0    100.0.27.254
 ```
+
+## Configuration du router CE
+```
+Router(config)#enable secret lannion
+Router(config)#hostname CE-2600
+CE-2600(config)#int FastEthernet 0/0
+CE-2600(config-if)#ip addr 10.34.1.1 255.255.255.0
+CE-2600(config-if)#no shut
+CE-2600(config-if)#exit
+CE-2600(config)#int FastEthernet 0/1
+CE-2600(config-if)#ip addr 192.168.34.254 255.255.255.0
+CE-2600(config-if)#no shut
+CE-2600(config-if)#exit
+CE-2600(config)#int Loopback34
+CE-2600(config-if)#ip addr 34.34.34.34 255.255.255.255
+CE-2600(config-if)#no shut
+CE-2600(config-if)#exit
+CE-2600(config)#router ospf 200
+CE-2600(config-router)#redistribute connected subnets 
+CE-2600(config-router)#network 10.34.1.0 0.0.0.255 area 6
+```
+
+## Configuration du vrf
+```
+Router-ISR-34(config)#hostname PE-ISR-34
+PE-ISR-34(config)#int GigabitEthernet 0/0/1
+PE-ISR-34(config-if)#ip vrf poste_33_34
+PE-ISR-34(config-vrf)#rd 33:34
+PE-ISR-34(config-vrf)#route-target both 33:34
+PE-ISR-34(config-vrf)#exit
+PE-ISR-34(config)#int GigabitEthernet 0/0/0
+PE-ISR-34(config-if)#ip vrf forwarding poste_33_34
+PE-ISR-34(config-if)#ip address 10.34.1.254 255.255.255.0
+```
+
+**TEST**
+```
+PE-ISR-34#ping vrf poste_33_34 10.34.1.1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.34.1.1, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 1/1/1 ms
+```
+
+**SH RUN**
+```
+ip vrf poste_33_34
+ rd 33:34
+ route-target export 33:34
+ route-target import 33:34
+ 
+ 
+PE-ISR-34#sh ip route vrf poste_33_34
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        10.34.1.0/24 is directly connected, GigabitEthernet0/0/0
+L        10.34.1.254/32 is directly connected, GigabitEthernet0/0/0
+      34.0.0.0/32 is subnetted, 1 subnets
+O E2     34.34.34.34 [110/20] via 10.34.1.1, 00:03:25, GigabitEthernet0/0/0
+O E2  192.168.34.0/24 [110/20] via 10.34.1.1, 00:03:25, GigabitEthernet0/0/0
+```
