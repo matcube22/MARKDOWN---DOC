@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "92ca5202a728ea84",
+        "id": "9fa0c9d63869f2c2",
         "type": "tabs",
         "children": [
           {
-            "id": "0327f92525971c17",
+            "id": "f30dc5179577fccf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TP1_MPLS/compte_rendu.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TP1_MPLS/compte_rendu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TP1_MPLS/compte_rendu.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "TP1_MPLS/compte_rendu.md"
-              }
+              "state": {}
             }
           },
           {
@@ -152,11 +144,11 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0327f92525971c17",
+  "active": "f30dc5179577fccf",
   "lastOpenFiles": [
+    "TP1_MPLS/compte_rendu.md",
     "TP1_MPLS/Implémentation de MPLS avec Cisco - FRAMEIP.COM.pdf",
     "TP1_MPLS/ping_mpls.png",
-    "TP1_MPLS/compte_rendu.md",
     "EXPO GEOPO/Notes.md",
     "TP_MAIL/Compte rendu mail.md",
     "SAE 3.01/Decouverte ADS.md",
