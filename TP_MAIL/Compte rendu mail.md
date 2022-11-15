@@ -723,3 +723,88 @@ Réception mail:
 
 On observe bien un *SYN/ACK* avec le serveur *smtp.etudiant531.iut* , le transfert des données et la fermeture de la connexion.
 
+## Transformation d'email
+On crée les réecritures:
+```
+root@S54:/etc/bind# touch /etc/postfix/sender_canonical
+root@S54:/etc/bind# nano /etc/postfix/sender_canonical
+etudiant@S54 etudiant_poste54@univ-rennes1.fr #Pour le compte etudiant
+root@S54 admin_poste54@univ-rennes1.fr #Pour le compte root
+```
+
+```
+root@S54:/etc/bind# postmap /etc/postfix/sender_canonical
+
+myhostname = tp541.iut
+alias_maps = hash:/etc/aliases
+sender_canonical_maps = hash:/etc/postfix/sender_canonical
+alias_database = hash:/etc/aliases
+myorigin = /etc/mailname
+mydestination = $myhostname, tp541.iut, s54, localhost.localdomain, localhost
+relayhost =
+mynetworks = 10.254.0.0/16 10.54.1.0/24 10.54.2.0/24
+mailbox_size_limit = 0
+recipient_delimiter =
+inet_interfaces = all
+inet_protocols = ipv4
+```
+
+On test la réecriture:
+```
+root@S54:/etc/bind# mail etudiant@tp531.iut
+Cc:
+Subject: 6666666666
+6666666666
+```
+
+On observe bien dans *syslog* que l'addresse est bien traduite
+```
+C940280635: from=<admin_poste54@univ-rennes1.fr>, size=342, nrcpt=1 (queue active)
+Nov 15 16:40:10 s54 postfix/smtp[17744]: C940280635: to=<etudiant@tp531.iut>, relay=smtp.tp531.iut[10.53.1.1]:25, delay=0.32, delays=0.23/0/0.05/0.04, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 4D45E8053C)
+```
+
+## Ordonnement par dossier
+Création du répertoire pour stocker les mails + droits
+```
+root@S54:/etc/bind# mkdir /home/etudiant
+root@S54:/etc/bind# chgrp etudiant /home/etudiant
+root@S54:/etc/bind# chown etudiant /home/etudiant
+```
+
+On vérifie les droits:
+```
+root@S54:/etc/bind# ls -l /home/
+total 8
+drwxr-xr-x 2 etudiant etudiant 4096 15 nov.  16:47 etudiant
+drwxr-xr-x 4 ftp      nogroup  4096  7 juil.  2020 ftp
+```
+
+On modifie notre *main.cf*
+```
+root@S54:/etc/bind# cat /etc/postfix/main.cf
+home_mailbox = Maildir/
+```
+
+On crée les répertoires nécessaires à l'utilisateur *etudiant*, là seront stocker ces mails.
+```
+root@S54:/etc/bind# ls -l /home/etudiant/Maildir/
+total 12
+drwx------ 2 etudiant etudiant 4096 15 nov.  16:52 cur
+drwx------ 2 etudiant etudiant 4096 15 nov.  16:52 new
+drwx------ 2 etudiant etudiant 4096 15 nov.  16:52 tmp
+```
+
+On envoie un mail pour vérifier que le mail se stock bien dans des dossiers:
+```
+root@S54:/etc/bind# mail etudiant@tp541.iut
+Cc:
+Subject: Facilement
+Remarquable
+```
+
+On observe bien que le mail c'est rangé dans le dossier:
+```
+oot@S54:/etc/bind# ls -l /home/etudiant/Maildir/new/
+total 4
+-rw------- 1 etudiant etudiant 445 15 nov.  16:52 1668527568.V803I19f336M830192.S54
+```
