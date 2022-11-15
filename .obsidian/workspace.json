@@ -4,18 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "58666359e76cc923",
+        "id": "86731b8dc3791029",
         "type": "tabs",
         "children": [
           {
-            "id": "ebe44db2bfa90a71",
+            "id": "412663eb9e7f2a5b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ANGLAIS_AFFICHE/Sources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "32e9a7ddfcb5c24b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ANGLAIS_AFFICHE/Sources.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ANGLAIS_AFFICHE/Sources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ANGLAIS_AFFICHE/Sources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ANGLAIS_AFFICHE/Sources.md"
+              }
             }
           },
           {
@@ -144,17 +165,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "ebe44db2bfa90a71",
+  "active": "32e9a7ddfcb5c24b",
   "lastOpenFiles": [
+    "ANGLAIS_AFFICHE/Brainstorming.md",
+    "ANGLAIS_AFFICHE/Contenu.md",
+    "ANGLAIS_AFFICHE/Sources.md",
     "AD_CR_TP2/TP AD2.md",
     "TP1_MPLS/compte_rendu.md",
     "TP1_MPLS/Implémentation de MPLS avec Cisco - FRAMEIP.COM.pdf",
     "TP1_MPLS/ping_mpls.png",
     "EXPO GEOPO/Notes.md",
     "TP_MAIL/Compte rendu mail.md",
-    "SAE 3.01/Decouverte ADS.md",
-    "TP_DNS/Compte rendu TP - DNS.md",
-    "AD_CR/Installation, Configuration AD.md",
-    "hostname/img4.png.md"
+    "SAE 3.01/Decouverte ADS.md"
   ]
 }
