@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9fa0c9d63869f2c2",
+        "id": "58666359e76cc923",
         "type": "tabs",
         "children": [
           {
-            "id": "f30dc5179577fccf",
+            "id": "ebe44db2bfa90a71",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AD_CR_TP2/TP AD2.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AD_CR_TP2/TP AD2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AD_CR_TP2/TP AD2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "AD_CR_TP2/TP AD2.md"
-              }
+              "state": {}
             }
           },
           {
@@ -152,8 +144,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f30dc5179577fccf",
+  "active": "ebe44db2bfa90a71",
   "lastOpenFiles": [
+    "AD_CR_TP2/TP AD2.md",
     "TP1_MPLS/compte_rendu.md",
     "TP1_MPLS/Implémentation de MPLS avec Cisco - FRAMEIP.COM.pdf",
     "TP1_MPLS/ping_mpls.png",
@@ -162,7 +155,6 @@
     "SAE 3.01/Decouverte ADS.md",
     "TP_DNS/Compte rendu TP - DNS.md",
     "AD_CR/Installation, Configuration AD.md",
-    "hostname/img4.png.md",
-    "CR_SAE_VIRTUALISATION/SAE Virtualisation.md"
+    "hostname/img4.png.md"
   ]
 }
