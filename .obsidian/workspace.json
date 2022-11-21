@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "774dec4cf5b7751c",
+        "id": "62d0f97957fddce5",
         "type": "tabs",
         "children": [
           {
-            "id": "6bdf4238dcf90489",
+            "id": "8d1ad06a457f0f1c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TP_MAIL/Compte rendu mail.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TP_MAIL/Compte rendu mail.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TP_MAIL/Compte rendu mail.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "TP_MAIL/Compte rendu mail.md"
-              }
+              "state": {}
             }
           },
           {
@@ -143,17 +135,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0a6c0aa01949796a",
+  "active": "8d1ad06a457f0f1c",
   "lastOpenFiles": [
+    "2A-1S-REZ/Avancement.md",
+    "2A-1S-REZ/Etude ACL.md",
+    "2A-1S-REZ/Compte rendu projet.md",
+    "2A-1S-REZ/To do SAE.md",
+    "2A-1S-REZ/README.md",
+    "TP_MAIL/Compte rendu mail.md",
     "TP_DNS/Compte rendu TP - DNS.md",
     "2022-11-15.md",
     "HackerNews/So I lost my OpenBSD FDE password (2016).md",
-    "markdown-cheat-sheet.md",
-    "TP_MAIL/Compte rendu mail.md",
-    "TP_MAIL/dns1.PNG",
-    "TP_MAIL/dns.png",
-    "ANGLAIS_AFFICHE/Sources.md",
-    "ANGLAIS_AFFICHE/Brainstorming.md",
-    "ANGLAIS_AFFICHE/Contenu.md"
+    "markdown-cheat-sheet.md"
   ]
 }
