@@ -11,8 +11,12 @@
             "id": "8d1ad06a457f0f1c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ANGLAIS_AFFICHE/Contenu.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ANGLAIS_AFFICHE/Contenu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ANGLAIS_AFFICHE/Contenu.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ANGLAIS_AFFICHE/Contenu.md"
+              }
             }
           },
           {
@@ -137,6 +145,7 @@
   },
   "active": "8d1ad06a457f0f1c",
   "lastOpenFiles": [
+    "ANGLAIS_AFFICHE/Brainstorming.md",
     "2A-1S-REZ/Avancement.md",
     "2A-1S-REZ/Etude ACL.md",
     "2A-1S-REZ/Compte rendu projet.md",
@@ -145,7 +154,6 @@
     "TP_MAIL/Compte rendu mail.md",
     "TP_DNS/Compte rendu TP - DNS.md",
     "2022-11-15.md",
-    "HackerNews/So I lost my OpenBSD FDE password (2016).md",
-    "markdown-cheat-sheet.md"
+    "HackerNews/So I lost my OpenBSD FDE password (2016).md"
   ]
 }

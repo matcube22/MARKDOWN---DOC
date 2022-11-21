@@ -1,4 +1,5 @@
-Paragraphe explicatif
-![containerisation vs virutalisation](img/containerisation-vs-virtualisation.png)
-Différentes solutions existantes
-*Logos des différentes solutions 3 ou 4*
+[padlet](https://padlet.com/annepullen/ipykej6ls9lzhicd)
+# Introduction to containerisation
+
+# The benefits
+# Containerisation and cloud providers
