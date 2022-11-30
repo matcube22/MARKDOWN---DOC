@@ -1,0 +1,5 @@
+# Abstract
+Our research study focuses on containerisation. With the increase in the number of services and server power, it has become inconsistent to have one server for one service. Total virtualisation technology has been able to solve this problem, however, it is computed and storage heavy. Containerisation technology was an alternative, as it only virtualised the layers that were essential to the execution of the service. It is more efficient, consumes fewer resources, and makes it possible to deploy a service very quickly. It also allows for high availability and load balancing on both the upstream and downstream sides. Containerisation enables application developers to stay focused on the development of their applications, and production is automated. Containerisation enables a DevOps approach to the application. Cloud providers use containerisation as part of SaaS and IaaS, to deploy the customer's application quickly from a pre-defined template. Docker is one of the most popular containerisation solutions.
+
+
+
