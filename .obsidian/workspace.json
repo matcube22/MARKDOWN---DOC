@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "57a5d98b29c10176",
+        "id": "a9dca02d02ccdcbd",
         "type": "tabs",
         "children": [
           {
-            "id": "684ecb6dafee9649",
+            "id": "37b44ccbbd054ea3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gestion de projets/Gestion de projets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b5e2a41a809f2f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "markdown-cheat-sheet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gestion de projets/Gestion de projets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gestion de projets/Gestion de projets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Gestion de projets/Gestion de projets.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,7 +136,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "684ecb6dafee9649",
+  "active": "37b44ccbbd054ea3",
   "lastOpenFiles": [
     "markdown-cheat-sheet.md",
     "Gestion de projets/Gestion de projets.md",
