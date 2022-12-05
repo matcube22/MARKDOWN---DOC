@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e38d14e38e77d1a3",
+        "id": "57a5d98b29c10176",
         "type": "tabs",
         "children": [
           {
-            "id": "1830d31edd040124",
+            "id": "684ecb6dafee9649",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ANGLAIS_AFFICHE/Brainstorming.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ANGLAIS_AFFICHE/Brainstorming.md",
+                "file": "ADSL/ADSL - Compte rendu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ANGLAIS_AFFICHE/Brainstorming.md",
+                "file": "ADSL/ADSL - Compte rendu.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ANGLAIS_AFFICHE/Brainstorming.md"
+                "file": "ADSL/ADSL - Compte rendu.md"
               }
             }
           },
@@ -144,14 +140,14 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "1830d31edd040124",
+  "active": "81c28797e138382d",
   "lastOpenFiles": [
+    "ANGLAIS_AFFICHE/Brainstorming.md",
     "ANGLAIS_AFFICHE/Abstract.md",
     "ANGLAIS_AFFICHE/Correction.md",
-    "ANGLAIS_AFFICHE/Brainstorming.md",
     "ANGLAIS_AFFICHE/Sources.md",
     "ANGLAIS_AFFICHE/Contenu.md",
-    "ADSL - Compte rendu.md",
+    "ADSL/ADSL - Compte rendu.md",
     "2A-1S-REZ/Avancement.md",
     "2A-1S-REZ/Etude ACL.md",
     "2A-1S-REZ/Compte rendu projet.md",
