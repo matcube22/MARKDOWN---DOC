@@ -1,6 +1,6 @@
 *Timaï SELMI & Philippe*
 
-L'objectif et de découvrir un outils de gestions de projets "Microsoft Project 2021". D'établir des tâches et rapports. 
+L'objectif et de découvrir un outils de gestions de projets "Microsoft Project 2021". D'établir des tâches et rapports de coûts, volumes horaires. 
 # Question 1
 Une [organisation](https://fr.wikipedia.org/wiki/Organisation "Organisation"), c'est un ensemble d'individus (entre autres) liés entre eux par un ensemble de relations formelles et informelles qui sont ensemble pour faire ou réaliser quelque chose ensemble[4](https://fr.wikipedia.org/wiki/Structure_organisationnelle#cite_note-4). L'ensemble des relations formelles s'appelle la _structure_[^1] de cette organisation.
 
